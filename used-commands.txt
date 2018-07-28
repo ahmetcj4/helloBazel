@@ -1,0 +1,8 @@
+export $WORKSPACE=$PWD
+touch $WORKSPACE/WORKSPACE
+touch $WORKSPACE/android/BUILD
+open $WORKSPACE/android/BUILD
+cd $WORKSPACE 
+bazel build //android:android 
+bazel mobile-install //android:android 
+
